@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07131a"/>
+      <stop offset="100%" stop-color="#0f2530"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#28e0ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#28e0ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="scan">
+      <feTurbulence type="fractalNoise" baseFrequency="0 0.9" numOctaves="1" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.04 0"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#glow)"/>
+
+  <!-- Faint horizontal scanlines -->
+  <g opacity="0.15" stroke="#28e0ff" stroke-width="1">
+    <line x1="0" y1="20" x2="1200" y2="20"/>
+    <line x1="0" y1="40" x2="1200" y2="40"/>
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="80" x2="1200" y2="80"/>
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="140" x2="1200" y2="140"/>
+    <line x1="0" y1="160" x2="1200" y2="160"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="220" x2="1200" y2="220"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="260" x2="1200" y2="260"/>
+    <line x1="0" y1="280" x2="1200" y2="280"/>
+  </g>
+
+  <!-- Original mark: a fractured hex crystal (mutation / "Stardust" motif), not game-specific branding -->
+  <g transform="translate(150,150)">
+    <circle r="78" fill="none" stroke="#28e0ff" stroke-width="3" opacity="0.5"/>
+    <polygon points="0,-62 54,-31 54,31 0,62 -54,31 -54,-31" fill="none" stroke="#28e0ff" stroke-width="3"/>
+    <polygon points="0,-30 26,-15 26,15 0,30 -26,15 -26,-15" fill="#28e0ff" opacity="0.85"/>
+    <line x1="0" y1="-62" x2="0" y2="-30" stroke="#28e0ff" stroke-width="2"/>
+    <line x1="54" y1="-31" x2="26" y2="-15" stroke="#28e0ff" stroke-width="2"/>
+    <line x1="54" y1="31" x2="26" y2="15" stroke="#28e0ff" stroke-width="2"/>
+    <line x1="0" y1="62" x2="0" y2="30" stroke="#28e0ff" stroke-width="2"/>
+    <line x1="-54" y1="31" x2="-26" y2="15" stroke="#28e0ff" stroke-width="2"/>
+    <line x1="-54" y1="-31" x2="-26" y2="-15" stroke="#28e0ff" stroke-width="2"/>
+    <circle r="6" fill="#eafcff"/>
+  </g>
+
+  <!-- Title block -->
+  <g font-family="Courier New, monospace" fill="#28e0ff">
+    <text x="280" y="140" font-size="56" font-weight="bold" letter-spacing="2">ONCEHUMAN-COG</text>
+    <text x="282" y="178" font-size="22" opacity="0.85">Live item &amp; weapon lookups for Red-DiscordBot</text>
+    <text x="282" y="210" font-size="16" opacity="0.55">$ load oncehuman &#8594; !oh &lt;name&gt;</text>
+  </g>
+
+  <rect width="1200" height="300" fill="black" filter="url(#scan)" opacity="0.5"/>
+  <rect x="0.5" y="0.5" width="1199" height="299" fill="none" stroke="#28e0ff" stroke-width="1" opacity="0.4"/>
+</svg>

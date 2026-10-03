@@ -1,5 +1,7 @@
 # oncehuman-cog
 
+<img src="assets/banner.svg" alt="oncehuman-cog banner" width="100%">
+
 A [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot) cog for [Once Human](https://www.oncehuman.game/) players: look up weapons, armor, deviations, mods, recipes, and more — pulled live from [Once Human DB](https://www.oncehumandb.com).
 
 ## Features
