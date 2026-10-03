@@ -1,0 +1,6 @@
+{
+    "author": ["Rob Keck (knkwebservices)"],
+    "install_msg": "Thanks for adding the oncehuman-cog repo! Install the `oncehuman` cog to get started: `[p]cog install oncehuman-cog oncehuman`",
+    "short": "Live Once Human database lookups for Red-DiscordBot.",
+    "description": "A Red-DiscordBot cog for Once Human players: look up weapons, armor, deviations, mods, recipes and more, pulled live from oncehumandb.com."
+}

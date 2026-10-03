@@ -1,0 +1,11 @@
+{
+    "author": ["Rob Keck (knkwebservices)"],
+    "min_bot_version": "3.5.0",
+    "description": "Once Human item/weapon/recipe/deviation lookups, pulled live from oncehumandb.com.",
+    "hidden": false,
+    "install_msg": "Thanks for installing OnceHuman! Try `[p]oh <name>` to look something up, e.g. `[p]oh Doombringer`.",
+    "requirements": ["aiohttp"],
+    "short": "Live Once Human database lookups.",
+    "tags": ["oncehuman", "once human", "game", "database", "lookup"],
+    "type": "COG"
+}
